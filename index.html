@@ -26,6 +26,28 @@ body {font-family: "Lato", sans-serif}
 .rounded-corners {
   border-radius: 10px;
 }
+
+p.indent {
+    text-indent: 30px;
+}
+.imgbutton {
+  position: absolute;
+  background-color:rgba(100,100,100,0.4);
+  color: black;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 1px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: default;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 </style>
 </head>
 <body>
@@ -64,8 +86,8 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides1 w3-display-container w3-center">
     <img src="Main02.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Something can go here</h3>
-      <p><b>Something can go here as well</b></p>
+      <h3></h3>
+      <p><b></b></p>
     </div>
   </div>
   <div class="mySlides1 w3-display-container w3-center">
@@ -82,27 +104,59 @@ body {font-family: "Lato", sans-serif}
       <p><b></b></p>
     </div>
   </div>
-
+<br>
+<br>
 
 
 
   <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="mySlides2 w3-display-container w3-col m6 w3-padding-large w3-hide-small">
-     <img src="Bud01.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-    </div>
-    <div class="mySlides2 w3-display-container w3-col m6 w3-padding-large w3-hide-small">
-     <img src="Bud02.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-    </div>
+  <div class="w3-row-padding" id="about">
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">About Bud's</h1><br>
-      <h5 class="w3-center">Tradition since 1960</h5>
-      <p class="w3-large">Bud's Go Karts was founded in 1960 by Emulous "Buddy" Hall. Bud started yada yada yada. More about him here. And most stuff here. Other font options could be variations <span class="w3-tag w3-light-grey">of this</span> and more if we need.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">This is another place we can include more about BUDS!</p>
+    <h1 class="w3-center"><b>About Bud's</b></h1><br>
+    <div class="w3-display-container">
+      <div class="w3-col w3-mobile" style="width:45%;float:left">
+        <div class="w3-display-container">
+        <div class="mySlides2">
+          <img src="Bud01.jpg" class="w3-round w3-image w3-opacity-min">
+          <button class="imgbutton">Emulous "Buddy" Hall 1941</button>
+        </div>
+        <div class="mySlides2">
+          <img src="Bud02.jpg" class="w3-round w3-image w3-opacity-min" width="100%">
+          <button class="imgbutton">Buddy ~1980</button>
+        </div>
+        <div class="mySlides2">
+          <img src="Bud03.jpg" class="w3-round w3-image w3-opacity-min" width="100%">
+          <button class="imgbutton">Bud selling tickets.</button>
+        </div>
+        <div class="mySlides2">
+          <img src="Bud04.jpg" class="w3-round w3-image w3-opacity-min" width="100%">
+          <button class="imgbutton">Bud locked up for safety.</button>
+        </div>
+        <div class="mySlides2">
+          <img src="Andrew01.jpg" class="w3-round w3-image w3-opacity-min" width="100%">
+          <button class="imgbutton">Andrew in the wild.</button>
+        </div>
+        <div class="mySlides2">
+          <img src="Andrew02.jpg" class="w3-round w3-image w3-opacity-min" width="100%">
+          <button class="imgbutton">We've been spotted!</button>
+        </div>
+        <button class="w3-button w3-display-left w3-white" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-white" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="w3-col w3-mobile" style="width:45%;float:right">
+      <p class="w3-large indent">In August of 1960, our founder, Emulous E. Hall III (aka <b>Buddy</b> Hall) carved out a dirt track and set up a card table for the grand opening of “Bud’s Go-Karts”.  Over the past 63 years, that humble start has grown up to be one of the most iconic destinations on Cape Cod for generations of children and families.
+      </p>
+      <p class="w3-large indent">“<b>Bud</b>”, a thirteenth generation Harwichian, WWII veteran, active community volunteer and benefactor, husband, father, grandfather, and friend to many, ran his beloved track to his very last day.  He was always fond of saying that "God put me on this earth to accomplish a certain number of things, and I am so far behind that I will never die." Everyone who knew him believed that he would, indeed, "live forever" but without a doubt, he did far more than "enough" during his long busy life. Since his passing in 2018 at the age of nearly 96, his indomitable spirit lives on.  We know that he is looking down with pride as his legacy continues under the care and keeping of his son <b>Andrew</b> who worked side by side with his Dad for over 40 years.
+      </p>
+      <p class="w3-large indent">As we celebrate what would have been Bud’s 100th birthday this year, we look forward to a busy summer season welcoming new friends and the return of many old friends.
+      </p>
     </div>
   </div>
-
+<br>
+<br>
 
 
   <!-- The Merch Section -->
@@ -184,6 +238,7 @@ body {font-family: "Lato", sans-serif}
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 var myIndex2 = 0;
+var timer = 0;
 
 carousel();
 carousel2();
@@ -209,9 +264,22 @@ function carousel2() {
   myIndex2++;
   if (myIndex2 > x.length) {myIndex2 = 1}
   x[myIndex2-1].style.display = "block";
-  setTimeout(carousel2, 11000);
+  timer = setTimeout(carousel2, 7000);
 }
 
+function plusDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex2 = myIndex2+n;
+  if (myIndex2 > x.length) {myIndex2 = 1}
+  if (myIndex2 < 1) {myIndex2 = x.length}
+  x[myIndex2-1].style.display = "block";
+  clearTimeout(timer);
+  timer = setTimeout(carousel2, 11000);
+}
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
